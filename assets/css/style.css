@@ -11,8 +11,8 @@
 
 h1 {
     font-family: 'Cabin', sans-serif;
-    padding-bottom: 40px;
-    text-shadow: 4px 2px black;
+    margin-top: 15px;
+    text-shadow: 2px 2px black;
 }
 
 .my-div {
@@ -45,7 +45,9 @@ h1 {
 
 .welcome-img {
     display: block;
-    width: 100%;
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 80%;
     border-radius: 100%;
 }
 
@@ -53,8 +55,13 @@ h1 {
     display: block;
 }
 
+.about p {
+    font-size: .75em;
+}
+
 .about-img {
-    width: 300px;
+    display: none;
+    /* width: 300px; */
 }
 
 .portfolio {
@@ -75,8 +82,8 @@ h1 {
 */
 
 .project-container {
-    width: 100%;
-    height: 20vh;
+    /* width: 180px; */
+    height: 23vh;
     border: 2px solid darkblue;
     border-radius: 10px;
     background-color: darkgray;
@@ -105,8 +112,8 @@ h1 {
 .pj-anchor-source {
     display: inline-block;
     margin: 0 10px;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: .7em;
+    /* line-height: 1em; */
 }
 
 .pj-anchor-page a:hover,
@@ -128,10 +135,128 @@ h1 {
     text-align: center;
     background-color: #000;
     border-top: 5px solid #0F4BD6;
-    font-size: 12px;
-    line-height: 24px;
-    color:lightgray;
+    padding-top: 8px;
+    font-size: 10px;
+    line-height: 20px;
     height: 40px;
+    color:lightgray;
     position: sticky;
     bottom: 0;
+}
+
+/* iPhone5 or iPhoneSE LandScape */
+@media (max-width: 575.98px) and (orientation : landscape){
+    .welcome,
+    .about,
+    .portfolio,
+    .contact {
+        padding-top: 20px;
+        height: 100vh;
+    }
+
+    .portfolio{
+        padding-top: 50px;
+    }
+
+    .welcome-img {
+        width: 100%;
+    }
+
+    .about h1{
+        display: block;
+        margin-top: 35px;
+        /* display: none; */
+    }
+
+    .about p{
+        font-size: .7em;
+    }
+
+    .project-container {
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .project-image{
+        height: 100%;
+    }
+    
+    .pj-anchor-page,
+    .pj-anchor-source {
+        margin: 0 10px;
+        font-size: .7em;
+    }
+
+    .footer {
+        display: none;
+    }
+
+}
+
+/*  Small devices Iphone6 and Above */
+@media (min-width: 576px) and (max-width: 767.98px) and (orientation : portrait) { 
+    h1 {
+        font-family: 'Cabin', sans-serif;
+        margin-top: 15px;
+        text-shadow: 2px 2px black;
+    }
+
+    .welcome-img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        width: 90%;
+        border-radius: 100%;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    .footer {
+        padding-top: 8px;
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    h1 {
+        font-family: 'Cabin', sans-serif;
+        margin-top: 15px;
+        text-shadow: 2px 2px black;
+    }
+
+    .welcome-img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        width: 150%;
+        border-radius: 100%;
+    }
+
+    .about-img {
+        display: block;
+        width: 300px;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    .pj-anchor-page,
+    .pj-anchor-source {
+        font-size: 1em;
+    }
+
+    .footer {
+        display: block;
+        padding-top: 8px;
+        font-size: 12px;
+        line-height: 24px;
+    }
 }
