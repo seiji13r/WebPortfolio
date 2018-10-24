@@ -215,9 +215,16 @@ h1 {
     }
 
     .footer {
+        text-align: center;
+        background-color: #000;
+        border-top: 5px solid #0F4BD6;
         padding-top: 8px;
         font-size: 12px;
         line-height: 24px;
+        height: 40px;
+        color:lightgray;
+        position: sticky;
+        bottom: 0;
     }
 }
 
