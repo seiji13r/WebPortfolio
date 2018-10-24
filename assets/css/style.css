@@ -41,6 +41,8 @@ h1 {
     font-size: 54px;
     line-height: 108px;
     text-shadow: 4px 2px black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
 }
 
 .welcome-img {
@@ -90,6 +92,7 @@ h1 {
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
+    transition-duration: .5s;
 }
 
 .project-image{
@@ -253,6 +256,25 @@ h1 {
 
     .about p {
         font-size: 1em;
+    }
+
+    .project-container {
+        transition-duration: .5s;
+    }
+
+    .project-container:hover{
+        z-index: 1;
+        border-radius: 20px;
+        border-width: 4px;
+        transform: scale(1.2) translateX(20px) translateY(-20px);
+    }
+
+    .project-image{
+        border-radius: 10px;
+    }
+
+    .project-image:hover{
+        border-radius: 20px;
     }
 
     .pj-anchor-page,
